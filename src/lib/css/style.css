@@ -1,0 +1,152 @@
+/* Estilizando o banner */
+
+.baner {
+    width: 100%;
+    height: 580px;
+    background-image: url('../img/casa-varandada.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.baner .mascara {
+    width: 100%;
+    height: 580px;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.comprar, .alugar{
+    width: 45%;
+    height: 400px;
+}
+
+.comprar{
+    background-image: url('../img/imagens/casa17.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.alugar{
+    background-image: url('../img/imagens/sala.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.fundo, .fundoa{
+    width: 100%;
+    height: 400px;
+}
+
+.fundo{
+    background-color: rgba(9, 29, 53, .8);
+} 
+
+.fundoa{
+    background-color: rgba(220, 94, 92, .8);
+}
+
+.depoimentos .box-12{
+    height: 350px;
+}
+
+.carousel {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slaides {
+    display: flex;
+    transition: transform .5s ease-in-out;
+}
+
+.slaide {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    animation: slaid-fade 4s ease-in-out infinite;
+}
+
+@keyframes slaid-fade {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    25%,
+    75% {
+        opacity: 1;
+    }
+}
+
+.prev, .next {
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev {
+    left: 60px;
+}
+
+.next {
+    right: 60px;
+}
+
+.prev:hover, .next:hover{
+    background-color: rgba(0, 0, 0, 0.24);
+}
+
+.paralax{
+    width: 100%;
+    height: 550px;
+    background-image: url('../img/banner1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contato-form form input,
+textarea {
+    border: none;
+    border-bottom: 1px solid #454f62;
+    margin-bottom: 30px;
+}
+
+.contato-form form input,
+label {
+    color: #fff;
+}
+
+.contato-form form input[type="radio"] {
+    transform: scale(.5);
+    margin-right: 10px;
+    margin-left: 5px;
+    vertical-align: middle;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    
+}
+
+.contato-form form input:checked[type="radio"] {
+    background-color: #2294f1;
+}
+
+.contato-form .conteudo{
+    margin-top: 150px;
+    margin-left: 150px;
+}
